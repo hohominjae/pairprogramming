@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ApiResponseDto {
+
     private String msg;
     private Integer statusCode;
 
