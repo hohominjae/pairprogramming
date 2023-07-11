@@ -1,12 +1,12 @@
-package com.thesun4sky.springblog.security;
+package com.thesun4sky.springblog.common.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.thesun4sky.springblog.entity.User;
-import com.thesun4sky.springblog.repository.UserRepository;
+import com.thesun4sky.springblog.user.entity.User;
+import com.thesun4sky.springblog.user.repository.UserRepository;
 
 /**
  * 2. 인증정보 받아오기

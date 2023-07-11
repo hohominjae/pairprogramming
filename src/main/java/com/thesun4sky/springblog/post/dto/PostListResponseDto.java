@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.dto;
+package com.thesun4sky.springblog.post.dto;
 
 import lombok.Getter;
 

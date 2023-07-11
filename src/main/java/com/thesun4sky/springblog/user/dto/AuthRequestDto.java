@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.dto;
+package com.thesun4sky.springblog.user.dto;
 
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;

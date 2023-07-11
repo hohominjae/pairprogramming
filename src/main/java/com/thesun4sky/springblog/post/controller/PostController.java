@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.controller;
+package com.thesun4sky.springblog.post.controller;
 
 import java.util.concurrent.RejectedExecutionException;
 
@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thesun4sky.springblog.dto.ApiResponseDto;
-import com.thesun4sky.springblog.dto.PostListResponseDto;
-import com.thesun4sky.springblog.dto.PostRequestDto;
-import com.thesun4sky.springblog.dto.PostResponseDto;
-import com.thesun4sky.springblog.security.UserDetailsImpl;
-import com.thesun4sky.springblog.service.PostService;
+import com.thesun4sky.springblog.common.dto.ApiResponseDto;
+import com.thesun4sky.springblog.post.dto.PostListResponseDto;
+import com.thesun4sky.springblog.post.dto.PostRequestDto;
+import com.thesun4sky.springblog.post.dto.PostResponseDto;
+import com.thesun4sky.springblog.common.security.UserDetailsImpl;
+import com.thesun4sky.springblog.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 
 @RestController

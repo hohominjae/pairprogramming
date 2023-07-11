@@ -1,6 +1,6 @@
-package com.thesun4sky.springblog.dto;
+package com.thesun4sky.springblog.post.dto;
 
-import com.thesun4sky.springblog.entity.Post;
+import com.thesun4sky.springblog.post.entity.Post;
 import lombok.Getter;
 import lombok.Setter;
 

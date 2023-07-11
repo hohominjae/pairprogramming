@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.entity;
+package com.thesun4sky.springblog.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

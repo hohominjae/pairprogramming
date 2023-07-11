@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.jwt;
+package com.thesun4sky.springblog.common.jwt;
 
 import java.security.Key;
 import java.util.Base64;

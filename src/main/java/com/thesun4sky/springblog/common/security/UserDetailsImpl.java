@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.security;
+package com.thesun4sky.springblog.common.security;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.thesun4sky.springblog.entity.User;
+import com.thesun4sky.springblog.user.entity.User;
 
 /**
  * 3. 인증정보 구현체

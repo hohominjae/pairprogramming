@@ -1,13 +1,11 @@
-package com.thesun4sky.springblog.service;
+package com.thesun4sky.springblog.user.service;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.thesun4sky.springblog.dto.AuthRequestDto;
-import com.thesun4sky.springblog.entity.User;
-import com.thesun4sky.springblog.jwt.JwtUtil;
-import com.thesun4sky.springblog.repository.UserRepository;
-import jakarta.servlet.http.HttpServletResponse;
+import com.thesun4sky.springblog.user.dto.AuthRequestDto;
+import com.thesun4sky.springblog.user.entity.User;
+import com.thesun4sky.springblog.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

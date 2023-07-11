@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.entity;
+package com.thesun4sky.springblog.common.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

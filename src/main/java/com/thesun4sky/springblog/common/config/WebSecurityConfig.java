@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.config;
+package com.thesun4sky.springblog.common.config;
 
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
@@ -14,9 +14,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.thesun4sky.springblog.jwt.JwtAuthorizationFilter;
-import com.thesun4sky.springblog.jwt.JwtUtil;
-import com.thesun4sky.springblog.security.UserDetailsServiceImpl;
+import com.thesun4sky.springblog.common.jwt.JwtAuthorizationFilter;
+import com.thesun4sky.springblog.common.jwt.JwtUtil;
+import com.thesun4sky.springblog.common.security.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 
 /**

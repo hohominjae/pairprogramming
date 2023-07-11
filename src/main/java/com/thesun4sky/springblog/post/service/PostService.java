@@ -1,4 +1,4 @@
-package com.thesun4sky.springblog.service;
+package com.thesun4sky.springblog.post.service;
 
 import java.util.List;
 import java.util.concurrent.RejectedExecutionException;
@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.thesun4sky.springblog.dto.PostListResponseDto;
-import com.thesun4sky.springblog.dto.PostRequestDto;
-import com.thesun4sky.springblog.dto.PostResponseDto;
-import com.thesun4sky.springblog.entity.Post;
-import com.thesun4sky.springblog.entity.User;
-import com.thesun4sky.springblog.repository.PostRepository;
+import com.thesun4sky.springblog.post.dto.PostListResponseDto;
+import com.thesun4sky.springblog.post.dto.PostRequestDto;
+import com.thesun4sky.springblog.post.dto.PostResponseDto;
+import com.thesun4sky.springblog.post.entity.Post;
+import com.thesun4sky.springblog.user.entity.User;
+import com.thesun4sky.springblog.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

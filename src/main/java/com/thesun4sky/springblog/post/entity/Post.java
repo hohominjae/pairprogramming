@@ -1,6 +1,8 @@
-package com.thesun4sky.springblog.entity;
+package com.thesun4sky.springblog.post.entity;
 
-import com.thesun4sky.springblog.dto.PostRequestDto;
+import com.thesun4sky.springblog.common.entity.TimeStamped;
+import com.thesun4sky.springblog.post.dto.PostRequestDto;
+import com.thesun4sky.springblog.user.entity.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
