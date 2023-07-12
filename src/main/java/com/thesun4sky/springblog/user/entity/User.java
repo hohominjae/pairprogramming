@@ -8,8 +8,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-@Table(name = "user")
-@EqualsAndHashCode
+//user -> users등을 바꿀때만 Table사용
+//@Table(name = "users")
+//작성자가 같은지 비교?
+//@EqualsAndHashCode
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
