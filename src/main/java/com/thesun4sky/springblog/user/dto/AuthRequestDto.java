@@ -19,4 +19,6 @@ public class AuthRequestDto {
     @Pattern(regexp = "ADMIN|USER",
              message = "ADMIN 혹은 USER만 입력해주세요")
     private UserRoleEnum role;
+    private boolean admin = false;
+    private String adminToken = "";
 }
