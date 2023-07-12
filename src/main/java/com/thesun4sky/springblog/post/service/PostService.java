@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.stream.Collectors;
 
+import com.thesun4sky.springblog.user.dto.AuthRequestDto;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,13 +44,20 @@ public class PostService {
         return new PostResponseDto(post);
     }
 
-    public void deletePost(Long id, User user) {
+    public void deletePost(Long id, User user, AuthRequestDto authRequestDto) {
+        //id값을 이용해서 찾은 게시물
         Post post = findPost(id);
 
-        if (!post.getUser().equals(user)) {
+        if(authRequestDto.isAdmin()){
+            postRepository.delete(post);
+        } else {
             throw new RejectedExecutionException();
         }
 
+//        작성자가 아닐때
+        if (!post.getUser().equals(user)) {
+            throw new RejectedExecutionException();
+        }
         postRepository.delete(post);
     }
 

@@ -2,6 +2,7 @@ package com.thesun4sky.springblog.post.controller;
 
 import java.util.concurrent.RejectedExecutionException;
 
+import com.thesun4sky.springblog.user.dto.AuthRequestDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -61,9 +62,9 @@ public class PostController {
     }
 
     @DeleteMapping("/posts/{id}")
-    public ResponseEntity<ApiResponseDto> deletePost(@AuthenticationPrincipal UserDetailsImpl userDetails, @PathVariable Long id) {
+    public ResponseEntity<ApiResponseDto> deletePost(@AuthenticationPrincipal UserDetailsImpl userDetails, AuthRequestDto authRequestDto, @PathVariable Long id) {
     try {
-        postService.deletePost(id, userDetails.getUser());
+        postService.deletePost(id, userDetails.getUser(), authRequestDto);
         return ResponseEntity.ok().body(new ApiResponseDto("게시글 삭제 성공", HttpStatus.OK.value()));
     } catch (RejectedExecutionException e) {
         return ResponseEntity.badRequest().build();
