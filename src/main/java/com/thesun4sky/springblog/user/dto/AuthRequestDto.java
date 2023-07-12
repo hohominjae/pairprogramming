@@ -1,5 +1,6 @@
 package com.thesun4sky.springblog.user.dto;
 
+import com.thesun4sky.springblog.user.entity.UserRoleEnum;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,5 +18,5 @@ public class AuthRequestDto {
 
     @Pattern(regexp = "ADMIN|USER",
              message = "ADMIN 혹은 USER만 입력해주세요")
-    private String role;
+    private UserRoleEnum role;
 }

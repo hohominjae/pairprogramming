@@ -1,5 +1,6 @@
 package com.thesun4sky.springblog.user.service;
 
+import com.thesun4sky.springblog.user.entity.UserRoleEnum;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -18,12 +19,13 @@ public class UserService {
     public void signup(AuthRequestDto requestDto) {
         String username = requestDto.getUsername();
         String password = passwordEncoder.encode(requestDto.getPassword());
+        UserRoleEnum role = requestDto.getRole();
 
         if (userRepository.findByUsername(username).isPresent()) {
             throw new IllegalArgumentException("이미 존재하는 회원입니다.");
         }
 
-        User user = new User(username, password);
+        User user = new User(username, password, role);
         userRepository.save(user);
     }
 
